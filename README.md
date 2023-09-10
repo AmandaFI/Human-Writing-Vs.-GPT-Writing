@@ -1,4 +1,5 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![DOI](https://zenodo.org/badge/673947076.svg)](https://zenodo.org/badge/latestdoi/673947076)
 
 # Detection Of News Written By The ChatGPT Through Authorship Attribution Performed By A Bidirectional LSTM Model
 
