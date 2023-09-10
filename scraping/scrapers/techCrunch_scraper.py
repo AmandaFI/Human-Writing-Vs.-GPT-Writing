@@ -1,8 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
 import csv
+import os.path as path
 
-path = r'../scraped_news_links/tech_techCrunch.csv'
+path =  path.abspath(path.join(__file__ ,"../../../dataset/news_links/tech_techCrunch.csv"))
+
 with open(path, 'r') as info_file:
 
     csv_reader = csv.reader(info_file, delimiter=',')

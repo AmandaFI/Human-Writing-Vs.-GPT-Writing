@@ -6,7 +6,7 @@ gn = GoogleNews(lang = 'en', country='US')
 
 def get_news(topic):
 
-    file = 'tech_theverge_3.csv'
+    file = '../dataset/news_links/tech_theverge.csv'
     editor = 'The Verge'
     
     search = gn.search(query=topic, from_=datetime.date(2022,1,1).strftime(f'%Y-%m-%d'), to_=datetime.date(2022,5,1).strftime(f'%Y-%m-%d'))
