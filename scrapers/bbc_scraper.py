@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-with open(r'C:\Users\aferr\Documents\TCC\Real_Datasets\BBC\tech_bbc_3.csv', 'r') as info_file:
+with open(r'../scraped_news_links/tech_bbc.csv', 'r') as info_file:
 
     csv_reader = csv.reader(info_file, delimiter=',')
     editor = 'BBC'
@@ -21,8 +21,7 @@ with open(r'C:\Users\aferr\Documents\TCC\Real_Datasets\BBC\tech_bbc_3.csv', 'r')
                 news_text = div_content[0].find_all(['p', 'h1', 'h2'])
                 
                 full_text = ''
-                for tag in news_text[1:]:    # manter ou não o título
-                # for tag in news_text:
+                for tag in news_text[1:]: 
                     text = tag.get_text()
                     if 'Related Topics' in text:
                         break

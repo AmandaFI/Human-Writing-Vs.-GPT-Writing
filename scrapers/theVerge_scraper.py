@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
-path = r'C:\Users\aferr\Documents\TCC\Real_Datasets\TheVerge\tech_theverge_3.csv'
+path = r'../scraped_news_links/tech_theverge.csv'
 with open(path, 'r', encoding="utf-8") as info_file:
 
     csv_reader = csv.reader(info_file, delimiter=',')
