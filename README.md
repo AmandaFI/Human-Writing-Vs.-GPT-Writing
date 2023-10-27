@@ -15,7 +15,7 @@
 
 ## Overview <a name="overview"></a>
 
-This repository contains the code used in the research that produced the article [link]().
+This repository contains the code used in the research that produced [this article](https://arxiv.org/pdf/2310.16685.pdf).
 
 ## Research summary <a name="summary"></a>
 
